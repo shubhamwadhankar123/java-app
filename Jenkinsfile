@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'shubhamwadhankar2103/javakubernetes:03'
+        IMAGE_NAME = 'shubhamwadhankar2103/javakubernetes:01'
     }
 
     stages {

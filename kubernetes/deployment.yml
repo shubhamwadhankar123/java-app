@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hellojava-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hellojava
+  template:
+    metadata:
+      labels:
+        app: hellojava
+    spec:
+      containers:
+      - name: hellojava
+        image: shubhamwadhankar2103/javakubernetes:latest
+        ports:
+        - containerPort: 8080
